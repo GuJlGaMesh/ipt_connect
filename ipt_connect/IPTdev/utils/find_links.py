@@ -1,9 +1,13 @@
+import sys
 import lxml.html
 from urllib2 import urlopen
+from .. import *
 
 head = 'http://127.0.0.1:8000'
 http = 'http:'
 dev =  '/IPTdev/'
+#dev = "/" + str(getattr(settings, "INSTALLED_TOURNAMENTS")) + "/"
+#dev = "/" + parameters.instance_name + "/"
 urls = [
         'problems',
         'participants',
